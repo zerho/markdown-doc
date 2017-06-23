@@ -1,8 +1,6 @@
-### Promotions
+Promotions
 
-
-
-#### Retrieve a promotion
+### Retrieve a promotion
 
 ```
 //Retrieves a promotion by its id
@@ -13,7 +11,7 @@
 
 
 
-#### List all promotions
+### List all promotions
 
 ```
 //Retrieves a list of promotions filtered and sorted by the query object
@@ -23,7 +21,7 @@
 
 
 
-#### Get by cart id
+### Get by cart id
 
 ```
 //Retrieves a list of promotions eligible for a specific cart

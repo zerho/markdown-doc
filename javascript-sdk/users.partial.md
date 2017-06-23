@@ -1,6 +1,6 @@
-### Users
+Users
 
-#### Checking if a user is authenticated
+### Checking if a user is authenticated
 
 Whenever you create a new instance of the client (at pageloads for example), it immediatly looks for a user token in the current environment (the browser). If the client find user information, it populates the value `client.token`.
 
@@ -20,9 +20,9 @@ if (client.token) {
 
 
 
-#### Authenticate a user
+### Authenticate a user
 
-#### Authenticate with username and password
+### Authenticate with username and password
 
 Authenticates a user with email and password. Under the hood, the marketcloud api tests the user credentials and if they are valid, a token is received from the API and stored in the user's browser.
 
@@ -49,7 +49,7 @@ If the authentication is successful, `data` is an object:
 
 ```
 
-#### Authenticate with Facebook
+### Authenticate with Facebook
 
 Authenticates a user using Facebook login. Please, note that using this authentication strategy requires a couple more setup steps on the Facebook side. We have a [dedicated guide](/documentation/guides/facebook-login) to help you get started with Facebook and Marketcloud.
 
@@ -66,7 +66,7 @@ The data object is the same as in the authenticate() method.
 
 
 
-#### Logout
+### Logout
 
 This method will log the user out, forgetting the auth token and the current cart's id
 
@@ -78,7 +78,7 @@ marketcloud.users.logout();
 
 
 
-#### Check login status
+### Check login status
 
 This method will return true if there is a local auth token. False otherwise.
 
@@ -89,7 +89,7 @@ var isLogged = marketcloud.users.isAuthenticated();
 
 
 
-#### Create a user
+### Create a user
 
 Use this method to register users to you eCommerce app.
 
@@ -107,7 +107,7 @@ Use this method to register users to you eCommerce app.
 
 
 
-#### Retrieve the currently authenticated user
+### Retrieve the currently authenticated user
 
 Authentication required
 
@@ -122,7 +122,7 @@ marketcloud.users.getCurrent(function(err,response){
 
 
 
-#### Update a user
+### Update a user
 
 Authentication required
 
@@ -137,7 +137,7 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
 
 
 
-#### Delete a user
+### Delete a user
 
 Authentication required
 

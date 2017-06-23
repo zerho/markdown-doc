@@ -1,4 +1,4 @@
-### Payments
+Payments
 
 Marketcloud supports a certain number of payment methods. Most of them requires client side and server side configuration, we try to abstract the server side part, so you just have to configure client side scripts.
 
@@ -9,9 +9,9 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 
 
-#### Create a payment
+### Create a payment
 
-##### Arguments
+#### Arguments
 
 
 
@@ -23,7 +23,7 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 
 
-##### Example request
+#### Example request
 
 ```
 

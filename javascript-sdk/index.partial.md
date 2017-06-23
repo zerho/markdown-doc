@@ -1,11 +1,11 @@
-##### Getting Started
+#### Getting Started
 
 *   [Introduction](#introduction)
 *   [Installation](#installation)
 *   [Authentication](#authentication)
 *   [Making requests](#making-requests)
 
-##### API REFERENCE
+#### API REFERENCE
 
 *   [Addresses](#addresses)
     *   [List all addresses](#addresses.list)
@@ -60,14 +60,14 @@
 
 
 
-##### Getting Started
+#### Getting Started
 
 *   [Introduction](#introduction)
 *   [Installation](#installation)
 *   [Authentication](#authentication)
 *   [Making requests](#making-requests)
 
-##### API REFERENCE
+#### API REFERENCE
 
 *   [Addresses](#addresses)
     *   [Create an address](#addresses.create)

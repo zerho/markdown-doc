@@ -1,6 +1,4 @@
-
-
-### Authentication and security
+Authentication and security
 
 Every application identifies itself to Marketcloud using a unique public key. Since you must ship the public key with your client application code, this key is **public**. The application security is guaranteed by the secret key, which you should never share with anyone. The only place where it should be safe to store and use the secret key is (in case you need it) your server side code.
 

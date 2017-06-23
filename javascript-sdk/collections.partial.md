@@ -1,10 +1,8 @@
-### Collections
+Collections
 
+### Retrieve a collection
 
-
-#### Retrieve a collection
-
-##### Example request
+#### Example request
 
 ```
 //Retrieves a collection by its id
@@ -20,11 +18,11 @@ marketcloud.collections.getById(123)
 
 
 
-#### List all collections
+### List all collections
 
 Retrieves a list of Collections filtered and sorted by the query object.
 
-##### Arguments
+#### Arguments
 
 
 
@@ -36,7 +34,7 @@ Retrieves a list of Collections filtered and sorted by the query object.
 
 
 
-##### Example request
+#### Example request
 
 ```
 

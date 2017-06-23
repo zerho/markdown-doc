@@ -1,8 +1,6 @@
-### Variables
+Variables
 
-
-
-#### Retrieve a variable
+### Retrieve a variable
 
 ```
 //Retrieves a variable by its id
@@ -13,7 +11,7 @@
 
 
 
-#### List all variables
+### List all variables
 
 ```
 //Retrieves a list of variables filtered and sorted by the query object

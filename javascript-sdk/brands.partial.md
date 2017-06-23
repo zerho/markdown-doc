@@ -1,8 +1,6 @@
-### Brands
+Brands
 
-
-
-#### Retrieve a brand
+### Retrieve a brand
 
 ```
 //Retrieves a brand by its id
@@ -13,11 +11,11 @@
 
 
 
-#### List all brands
+### List all brands
 
 Retrieves a list of Brands filtered and sorted by the query object.
 
-##### Arguments
+#### Arguments
 
 
 
@@ -29,7 +27,7 @@ Retrieves a list of Brands filtered and sorted by the query object.
 
 
 
-##### Example request
+#### Example request
 
 ```
 //Retrieves a list of Brands filtered and sorted by the query object
@@ -37,11 +35,9 @@ marketcloud.brands.list(query, function(err,response){
 });
 ```
 
-### Categories
+Categories
 
-
-
-#### Retrieve a category
+### Retrieve a category
 
 ```
 //Retrieves a category by its id
@@ -52,7 +48,7 @@ marketcloud.brands.list(query, function(err,response){
 
 
 
-#### List all categories
+### List all categories
 
 ```
 //Retrieves a list of categories filtered and sorted by the query object

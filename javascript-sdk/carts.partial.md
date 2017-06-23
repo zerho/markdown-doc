@@ -1,10 +1,8 @@
-### Carts
+Carts
 
+### Create a cart
 
-
-#### Create a cart
-
-##### Arguments
+#### Arguments
 
 
 
@@ -28,7 +26,7 @@ A line item is an object with the following attributes
 
 Creates a new cart with a product in it.
 
-##### Example request
+#### Example request
 
 ```
 
@@ -43,9 +41,9 @@ Creates a new cart with a product in it.
 
 
 
-#### Retrieve a cart
+### Retrieve a cart
 
-##### Example request
+#### Example request
 
 ```
 
@@ -57,7 +55,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 
 
-#### Add items to cart
+### Add items to cart
 
 ```
 
@@ -71,7 +69,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 
 
-#### Update cart contents
+### Update cart contents
 
 ```
 
@@ -86,7 +84,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 
 
-#### Add a coupon to the cart
+### Add a coupon to the cart
 
 ```
 
@@ -98,7 +96,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 
 
-#### Remove cart contents
+### Remove cart contents
 
 ```
 

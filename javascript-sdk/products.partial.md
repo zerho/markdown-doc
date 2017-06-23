@@ -1,8 +1,6 @@
-### Products
+Products
 
-
-
-#### Retrieve a product
+### Retrieve a product
 
 ```
 //Retrieves a product by its id
@@ -59,11 +57,11 @@ Note that starting from author, the remaining fields are custom attributes defin
 
 
 
-#### List all products
+### List all products
 
 Retrieves a list of products filtered and sorted by the query object.
 
-##### Arguments
+#### Arguments
 
 
 
@@ -80,7 +78,7 @@ Retrieves a list of products filtered and sorted by the query object.
 
 
 
-##### Example request
+#### Example request
 
 ```
 //Retrieves a list of products filtered and sorted by the query object

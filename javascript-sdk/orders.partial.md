@@ -1,8 +1,6 @@
-### Orders
+Orders
 
-
-
-#### List all orders
+### List all orders
 
 Authentication required
 
@@ -17,7 +15,7 @@ marketcloud.orders.list(query,function(err,response){
 
 
 
-#### Retrieve an order
+### Retrieve an order
 
 Authentication required
 
@@ -31,9 +29,9 @@ Authentication required
 
 
 
-#### Create an order
+### Create an order
 
-##### Arguments
+#### Arguments
 
 
 

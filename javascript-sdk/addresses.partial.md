@@ -1,10 +1,8 @@
-### Addresses
+Addresses
 
+### Create an address
 
-
-#### Create an address
-
-##### Arguments
+#### Arguments
 
 
 
@@ -23,7 +21,7 @@
 
 
 
-##### Example request
+#### Example request
 
 ```
 
@@ -35,9 +33,9 @@ marketcloud.addresses.create(new_address,function(err,response){
 
 
 
-#### List all addresses
+### List all addresses
 
-##### Arguments
+#### Arguments
 
 
 
@@ -52,7 +50,7 @@ marketcloud.addresses.create(new_address,function(err,response){
 
 Retrieves a list of addresses filtered and sorted by the query object.
 
-##### Example request
+#### Example request
 
 ```
 
@@ -64,11 +62,11 @@ marketcloud.addresses.list(query,function(err){
 
 
 
-#### Retrieve an address
+### Retrieve an address
 
 Retrieves an address by its id.
 
-##### Example request
+#### Example request
 
 ```
 
@@ -80,11 +78,11 @@ marketcloud.addresses.getById(address_id,function(err,response){
 
 
 
-#### Update an address
+### Update an address
 
 Updates a address by id.
 
-##### Arguments
+#### Arguments
 
 
 
@@ -95,7 +93,7 @@ Updates a address by id.
 
 
 
-##### Example request
+#### Example request
 
 ```
 
@@ -107,11 +105,11 @@ marketcloud.addresses.update(address_id,update_data,function(err,response){
 
 
 
-#### Delete an address
+### Delete an address
 
 Deletes a address by id.
 
-##### Example request
+#### Example request
 
 ```
 

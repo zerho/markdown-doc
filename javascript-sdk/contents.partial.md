@@ -1,8 +1,6 @@
-### Contents
+Contents
 
-
-
-#### Retrieve a content
+### Retrieve a content
 
 ```
 //Retrieves a content by its id
@@ -13,7 +11,7 @@
 
 
 
-#### List contents
+### List contents
 
 ```
 //Retrieves a paginated list of categories filtered and sorted by the query object

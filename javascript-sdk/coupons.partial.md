@@ -1,10 +1,8 @@
-### Coupons
+Coupons
 
+### Retrieve a coupon
 
-
-#### Retrieve a coupon
-
-##### Example request
+#### Example request
 
 ```
 //Retrieves a coupon by its id
@@ -14,9 +12,9 @@ marketcloud.coupons.getById(123);
 
 
 
-#### List coupons
+### List coupons
 
-##### Example request
+#### Example request
 
 ```
 //Retrieves a paginated list of coupons
