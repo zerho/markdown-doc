@@ -31,6 +31,22 @@ console.log(`Writing directory ${ baseOutputDirectory }`);
 var filesToConvert = getFiles(baseInputDirectory).filter((item) => {
   return item !== 'index.partial.ejs';
 });
+var specialSections = ['introduction','installation','authentication','promises','sorting'];
+
+specialSections = specialSections.map( (s) => s + '.partial.ejs');
+specialSections.reverse()
+
+
+specialSections.forEach( (item) => {
+  var index = filesToConvert.indexOf(item);
+  filesToConvert.splice(index,1);
+  filesToConvert.unshift(item);
+})
+
+
+
+
+var buf = "";
 
 filesToConvert.forEach( (filename) => {
 
@@ -56,15 +72,23 @@ filesToConvert.forEach( (filename) => {
   markdown = markdown.replace(/\<\/a\>/g,'');
   markdown = markdown.replace(/\<section.*\>/g,'');
   markdown = markdown.replace(/\<\/section\>/g,'');
+  markdown = markdown.replace(/\<span.*\>Required\<\/span\>/g,' **Required** ');
 
    markdown = markdown.replace(/\<span.*\>/g,'');
   markdown = markdown.replace(/\<\/span\>/g,'');
   
-  markdown = markdown.replace(/\<span class\=\"label label\-success\"\>Required\<\/span\>/g,' _required_ ');
 
 
-
-  fs.writeFileSync( path.join(baseOutputDirectory,filename.replace('ejs','md')), markdown);
+  buf += markdown;
+  buf += "\n\n";
 
 })
 
+// Adding the title
+buf = "# Marketcloud Javascript SDK "+ "\n\n" + buf;
+
+var buildname = baseOutputDirectory.split('/');
+buildname = buildname[buildname.length-1];
+buildname += '.md';
+
+fs.writeFileSync( path.join(__dirname,buildname), buf);

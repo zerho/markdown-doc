@@ -1,4 +1,6 @@
-# Marketcloud Javascript SDK
+# Marketcloud Javascript SDK 
+
+
 
 This is the documentation for the official Marketcloud Javascript SDK. It is a wrapper for our REST api and it makes it easier to use. This document provides an API reference for versions 2.0.0 and above of the SDK, we highly recommend to use the latest version of the SDK and before upgrading, please read the [changelog](https://github.com/Marketcloud/marketcloud-js/wiki/Note-for-Version-2.0.0).
 
@@ -105,14 +107,14 @@ client.products.list({
 
 | Field | Type | Description |
 | --- | --- | --- |
-| full_name  | String | The full name of the resident |
-| email  | String | A valid email address |
-| country  | String | The country of the address |
+| full_name  **Required**  | String | The full name of the resident |
+| email  **Required**  | String | A valid email address |
+| country  **Required**  | String | The country of the address |
 | state | String | The state of the address |
-| city  | String | The city of the address |
-| address1  | String | The first address |
+| city  **Required**  | String | The city of the address |
+| address1  **Required**  | String | The first address |
 | address2 | String | Additional address space |
-| postal_code  | String | The postal code of the address |
+| postal_code  **Required**  | String | The postal code of the address |
 | phone_number | String | The phone number for the address |
 | alternate_phone_number | String | An alternate phone number for the address |
 
@@ -185,8 +187,8 @@ Updates a address by id.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| address_id  | Number | The univocal address identifier |
-| update_data  | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
+| address_id  **Required**  | Number | The univocal address identifier |
+| update_data  **Required**  | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
 
 
 
@@ -290,7 +292,7 @@ marketcloud.brands.list(query, function(err,response){
 
 | Field | Type | Description |
 | --- | --- | --- |
-| items  | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
+| items  **Required**  | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
 
 
 
@@ -300,9 +302,9 @@ A line item is an object with the following attributes
 
 | Field | Type | Description |
 | --- | --- | --- |
-| product_id  | Number | The univocal product identifier |
+| product_id  **Required**  | Number | The univocal product identifier |
 | variant_id | Number | The univocal number identifying a product's variant. |
-| quantity  | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
+| quantity  **Required**  | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
 
 
 
@@ -569,11 +571,11 @@ marketcloud.orders.list(query,function(err,response){
 | Field | Type | Description |
 | --- | --- | --- |
 | items | Array | An array of line items.This is required if the  is missing. |
-| cart_id  is missing |
+| cart_id  **Required**  | Integer | The id of the cart that is going to be turned into an order. This is required if  is missing |
 | state | String | The state of the order. Defaults to _created_ |
-| shipping_address_id  | Integer | The id of the shipping address |
+| shipping_address_id  **Required**  | Integer | The id of the shipping address |
 | shipping_address | Object | A shipping address object. See Address for more informations. This is required if the  is missing. |
-| billing_address_id  | Integer | The id of the billing address |
+| billing_address_id  **Required**  | Integer | The id of the billing address |
 | billing_address | Object | A sbilling address object. See Address for more informations. This is required if the  is missing. |
 | user_id | Integer | The id of the user making the order |
 | shipping_id | Integer | The id of the **shipping method** chosen for the order. Be careful, this is not the shipping address. |
@@ -667,7 +669,7 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 | Field | Type | Description |
 | --- | --- | --- |
-| method  payments. |
+| method  **Required**  | String | A valid name of one of the supported payment methods. You can see a list of supported payment methods in Dashboard > settings > payments. |
 | order_id | Integer | The id of the order related to this payment. |
 |  | Mixed | Every payment method requires different additional parameters. Refer to the payment method documentation for more informations. |
 
