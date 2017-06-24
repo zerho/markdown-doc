@@ -38,7 +38,7 @@ At this point you can include the minified javascript file in your application
 
 Every application identifies itself to Marketcloud using a unique public key. Since you must ship the public key with your client application code, this key is **public**. The application security is guaranteed by the secret key, which you should never share with anyone. The only place where it should be safe to store and use the secret key is (in case you need it) your server side code.
 
-```
+```javascript
 //Create a new instance of the client
   var marketcloud = new Marketcloud.Client({
     public_key : 'your-apps-public-key'
@@ -59,7 +59,7 @@ In order to authenticate a user, use the [users.authenticate()](#users) method.
 
 Even if the examples in this reference use callbacks, starting with version 2.0.0 of the SDK, each endpoint method also returns a promise.
 
-```
+```javascript
 //This will work
 marketcloud.products.list({},function(err,response){
  console.log("My products:",response.data);
@@ -84,14 +84,14 @@ For using promises, the SDK needs Bluebird as a dependency. If you are installin
 
 Whenever you are requesting a list of resources, using a `list(query,callback)` method, you can pass sorting parameters to the query object:
 
-```
+```javascript
 
 client.products.list({
   sort_by : "name",
   sort_order : "ASC"
 })
 
-```
+```javascript
 
 `sort_by` is the name of the attribute you want to use for sorting and `sort_order` can have two values, `ASC` or `DESC`.
 
@@ -122,7 +122,7 @@ client.products.list({
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.addresses.create(new_address,function(err,response){
 
@@ -151,7 +151,7 @@ Retrieves a list of addresses filtered and sorted by the query object.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.addresses.list(query,function(err){
   // Your code here
@@ -167,7 +167,7 @@ Retrieves an address by its id.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.addresses.getById(address_id,function(err,response){
   // Your code here
@@ -194,7 +194,7 @@ Updates a address by id.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.addresses.update(address_id,update_data,function(err,response){
   // Your code here
@@ -210,7 +210,7 @@ Deletes a address by id.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.addresses.delete(address_id,function(err){
   // Your code here
@@ -224,7 +224,7 @@ marketcloud.addresses.delete(address_id,function(err){
 
 ### Retrieve a brand
 
-```
+```javascript
 //Retrieves a brand by its id
   marketcloud.brands.getById(brand_id, function(err,response){
 
@@ -251,7 +251,7 @@ Retrieves a list of Brands filtered and sorted by the query object.
 
 #### Example request
 
-```
+```javascript
 //Retrieves a list of Brands filtered and sorted by the query object
 marketcloud.brands.list(query, function(err,response){
 });
@@ -263,7 +263,7 @@ marketcloud.brands.list(query, function(err,response){
 
 ### Retrieve a category
 
-```
+```javascript
 //Retrieves a category by its id
   marketcloud.categories.getById(category_id, function(err,response){
 
@@ -274,7 +274,7 @@ marketcloud.brands.list(query, function(err,response){
 
 ### List all categories
 
-```
+```javascript
 //Retrieves a list of categories filtered and sorted by the query object
   marketcloud.categories.list(query, function(err,response){
 });
@@ -312,7 +312,7 @@ Creates a new cart with a product in it.
 
 #### Example request
 
-```
+```javascript
 
   //Creates a new cart for the user with given email
   marketcloud.carts.create({
@@ -329,7 +329,7 @@ Creates a new cart with a product in it.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.carts.getById(cart_id,function(err,response){
   // Your code here
@@ -341,7 +341,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 ### Add items to cart
 
-```
+```javascript
 
   //Add products to a cart identified by its id
   marketcloud.carts.add(cart_id,[{'product_id':5785,'quantity':2}],
@@ -355,7 +355,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 ### Update cart contents
 
-```
+```javascript
 
   marketcloud.carts.update(testCart.id,[
                       {'product_id':5712,'quantity':1},
@@ -370,7 +370,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 ### Add a coupon to the cart
 
-```
+```javascript
 
   marketcloud.carts.addCoupon(testCart.id,"COUPON_CODE",function(err,response){
 
@@ -382,7 +382,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 ### Remove cart contents
 
-```
+```javascript
 
   marketcloud.carts.remove(testCart.id,[
                       {'product_id':5712},
@@ -397,7 +397,7 @@ marketcloud.carts.getById(cart_id,function(err,response){
 
 If your store works with **variants**, you need to explicitly indicate which variant you want to add/remove/update .
 
-```
+```javascript
 
   //Adds an item to the cart
   marketcloud.carts.add(cart_id,[{'product_id':5785,'quantity':2, 'variant_id' : 3}],
@@ -429,7 +429,7 @@ If your store works with **variants**, you need to explicitly indicate which var
 
 #### Example request
 
-```
+```javascript
 //Retrieves a collection by its id
 marketcloud.collections.getById(123)
 .then(function(response){
@@ -461,7 +461,7 @@ Retrieves a list of Collections filtered and sorted by the query object.
 
 #### Example request
 
-```
+```javascript
 
 marketcloud.collections.list({})
 .then(function(response){
@@ -481,7 +481,7 @@ marketcloud.collections.list({})
 
 ### Retrieve a content
 
-```
+```javascript
 //Retrieves a content by its id
   marketcloud.contents.getById(content_id, function(err,response){
 
@@ -492,7 +492,7 @@ marketcloud.collections.list({})
 
 ### List contents
 
-```
+```javascript
 //Retrieves a paginated list of categories filtered and sorted by the query object
   marketcloud.contents.list(query, function(err,response){
 });
@@ -508,7 +508,7 @@ marketcloud.collections.list({})
 
 #### Example request
 
-```
+```javascript
 //Retrieves a coupon by its id
 marketcloud.coupons.getById(123);
 
@@ -520,7 +520,7 @@ marketcloud.coupons.getById(123);
 
 #### Example request
 
-```
+```javascript
 //Retrieves a paginated list of coupons
 // in this example, we only look for active coupons
 marketcloud.coupons.list({active : true});
@@ -537,7 +537,7 @@ marketcloud.coupons.list({active : true});
 
 
 
-```
+```javascript
 
 //Returns orders made by the currently authenticated user
 marketcloud.orders.list(query,function(err,response){
@@ -552,7 +552,7 @@ marketcloud.orders.list(query,function(err,response){
 
 
 
-```
+```javascript
 
   //Returns informations about an order made by the currently authenticated user
   marketcloud.orders.getById(id,function(err,response){
@@ -585,7 +585,7 @@ marketcloud.orders.list(query,function(err,response){
 
 
 
-```
+```javascript
 
   //Returns informations about an order made by the currently authenticated user
   var the_order = {
@@ -603,7 +603,7 @@ marketcloud.orders.list(query,function(err,response){
 
 Alternatively, instead of passing a cart_id you can pass a 'items' array containing line items. See cart for more informations.
 
-```
+```javascript
 
   var the_order = {
     shipping_address : {
@@ -631,7 +631,7 @@ In order to tell Marketcloud that an order is using a certain payment method, ju
 
 ### Retrieve a payment method
 
-```
+```javascript
 //Retrieves a payment method by its id
   marketcloud.paymentMethods.getById(payment_method_id, function(err,response){
 
@@ -642,7 +642,7 @@ In order to tell Marketcloud that an order is using a certain payment method, ju
 
 ### List all payment methods
 
-```
+```javascript
 //Retrieves a list of payment methods filtered and sorted by the query object
   marketcloud.paymentMethods.list(query, function(err,response){
 });
@@ -677,7 +677,7 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 #### Example request
 
-```
+```javascript
 
 // Braintree example
 var payment = {
@@ -710,7 +710,7 @@ marketcloud.payments.create(payment);
 
 ### Retrieve a product
 
-```
+```javascript
 //Retrieves a product by its id
   marketcloud.products.getById(product_id, function(err,response){
 
@@ -719,7 +719,7 @@ marketcloud.payments.create(payment);
 
 **product** is in the following form:
 
-```
+```javascript
 
   {
       "id": 1111,
@@ -737,7 +737,7 @@ marketcloud.payments.create(payment);
 
 Products can also have custom attributes! :
 
-```
+```javascript
 
   {
       "id": 13687,
@@ -788,7 +788,7 @@ Retrieves a list of products filtered and sorted by the query object.
 
 #### Example request
 
-```
+```javascript
 //Retrieves a list of products filtered and sorted by the query object
   marketcloud.products.list(query, function(err,response){
 })
@@ -796,7 +796,7 @@ Retrieves a list of products filtered and sorted by the query object.
 
 The query parameter is an object and you can use it to filter your products.
 
-```
+```javascript
 var query = {
     category_id : 5,
     price_lt:50
@@ -812,7 +812,7 @@ The previous example queries the api for products that belongs to the category w
 
 ### Retrieve a promotion
 
-```
+```javascript
 //Retrieves a promotion by its id
   marketcloud.categories.getById(category_id, function(err,response){
 
@@ -823,7 +823,7 @@ The previous example queries the api for products that belongs to the category w
 
 ### List all promotions
 
-```
+```javascript
 //Retrieves a list of promotions filtered and sorted by the query object
   marketcloud.promotions.list(query, function(err,response){
 });
@@ -833,7 +833,7 @@ The previous example queries the api for products that belongs to the category w
 
 ### Get by cart id
 
-```
+```javascript
 //Retrieves a list of promotions eligible for a specific cart
   marketcloud.promotions.getByCart(cart_id, function(err,response){
 });
@@ -847,7 +847,7 @@ Whenever you create a new instance of the client (at pageloads for example), it 
 
 If you want to check if the current user already has an auth token:
 
-```
+```javascript
 
 var client = new Marketcloud.Client({publicKey : '...'});
 if (client.token) {
@@ -867,7 +867,7 @@ if (client.token) {
 
 Authenticates a user with email and password. Under the hood, the marketcloud api tests the user credentials and if they are valid, a token is received from the API and stored in the user's browser.
 
-```
+```javascript
 
 marketcloud.users.authenticate('john.snow@wall.com','IKnowNothing',
   function(err,response){
@@ -878,7 +878,7 @@ marketcloud.users.authenticate('john.snow@wall.com','IKnowNothing',
 
 If the authentication is successful, `data` is an object:
 
-```
+```javascript
 {
   user : {
     email : "john.doe@example.com",
@@ -894,7 +894,7 @@ If the authentication is successful, `data` is an object:
 
 Authenticates a user using Facebook login. Please, note that using this authentication strategy requires a couple more setup steps on the Facebook side. We have a [dedicated guide](/documentation/guides/facebook-login) to help you get started with Facebook and Marketcloud.
 
-```
+```javascript
 
 marketcloud.users.authenticateWithFacebook(user_id,access_token,
   function(err,response){
@@ -911,7 +911,7 @@ The data object is the same as in the authenticate() method.
 
 This method will log the user out, forgetting the auth token and the current cart's id
 
-```
+```javascript
 
 marketcloud.users.logout();     
 
@@ -923,7 +923,7 @@ marketcloud.users.logout();
 
 This method will return true if there is a local auth token. False otherwise.
 
-```
+```javascript
 var isLogged = marketcloud.users.isAuthenticated();
 
 ```
@@ -934,7 +934,7 @@ var isLogged = marketcloud.users.isAuthenticated();
 
 Use this method to register users to you eCommerce app.
 
-```
+```javascript
 
   //Authenticates a user given email and password
   marketcloud.users.create({
@@ -952,7 +952,7 @@ Use this method to register users to you eCommerce app.
 
 
 
-```
+```javascript
 
 //Returns complete informations about the currently authenticated user
 marketcloud.users.getCurrent(function(err,response){
@@ -967,7 +967,7 @@ marketcloud.users.getCurrent(function(err,response){
 
 
 
-```
+```javascript
 
 //Update the information about the currently authenticated user
 marketcloud.users.update({email : 'newaddress@example.com'},function(err,response){
@@ -982,7 +982,7 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
 
 
 
-```
+```javascript
 
   //Delete the currently authenticated user
   marketcloud.users.delete(function(err){
@@ -996,7 +996,7 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
 
 ### Retrieve a variable
 
-```
+```javascript
 //Retrieves a variable by its id
   marketcloud.variables.getById(variable_id, function(err,response){
 
@@ -1007,7 +1007,7 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
 
 ### List all variables
 
-```
+```javascript
 //Retrieves a list of variables filtered and sorted by the query object
   marketcloud.variables.list(query, function(err,response){
 });
