@@ -1,4 +1,4 @@
-<section class="resource">
+
 
 ## Coupons
 
@@ -27,4 +27,3 @@ marketcloud.coupons.list({active : true});
 
 ```
 
-</section>

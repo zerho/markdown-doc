@@ -15,6 +15,6 @@ Every application identifies itself to Marketcloud using a unique public key. Si
 > **Note**
 > By default, the SDK will have very limited write and read access. Most write operations will require user authentication. If the default user authorizations are not enough for your application (for example if you are building a Marketplace) you can create new user roles. [Learn more](#)
 
-Some methods requires a user authorization token. This is because, for example, only logged users should be able to edit their profile informations, or review their orders and items in carts. Whenever a method requires authentication, you will see a <span class="text-muted">Authentication required</span> label.
+Some methods requires a user authorization token. This is because, for example, only logged users should be able to edit their profile informations, or review their orders and items in carts. Whenever a method requires authentication, you will see a  label.
 
 In order to authenticate a user, use the [users.authenticate()](#users) method.

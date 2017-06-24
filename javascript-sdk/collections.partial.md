@@ -1,4 +1,4 @@
-<section class="resource">
+
 
 ## Collections
 
@@ -52,4 +52,3 @@ marketcloud.collections.list({})
 
 ```
 
-</section>

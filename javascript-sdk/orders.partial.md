@@ -39,13 +39,13 @@ marketcloud.orders.list(query,function(err,response){
 
 | Field | Type | Description |
 | --- | --- | --- |
-| items | Array | An array of line items.This is required if the <span class="code">cart_id</span> is missing. |
-| cart_id <span class="label label-success">Required</span> | Integer | The id of the cart that is going to be turned into an order. This is required if <span class="code">items</span> is missing |
+| items | Array | An array of line items.This is required if the  is missing. |
+| cart_id  is missing |
 | state | String | The state of the order. Defaults to _created_ |
-| shipping_address_id <span class="label label-success">Required</span> | Integer | The id of the shipping address |
-| shipping_address | Object | A shipping address object. See Address for more informations. This is required if the <span class="code">shipping_address_id</span> is missing. |
-| billing_address_id <span class="label label-success">Required</span> | Integer | The id of the billing address |
-| billing_address | Object | A sbilling address object. See Address for more informations. This is required if the <span class="code">billing_address_id</span> is missing. |
+| shipping_address_id  | Integer | The id of the shipping address |
+| shipping_address | Object | A shipping address object. See Address for more informations. This is required if the  is missing. |
+| billing_address_id  | Integer | The id of the billing address |
+| billing_address | Object | A sbilling address object. See Address for more informations. This is required if the  is missing. |
 | user_id | Integer | The id of the user making the order |
 | shipping_id | Integer | The id of the **shipping method** chosen for the order. Be careful, this is not the shipping address. |
 | store_id | Integer | The id of the store receiving in the order |

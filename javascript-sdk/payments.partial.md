@@ -1,4 +1,4 @@
-<section class="resource">
+
 
 ## Payments
 
@@ -19,7 +19,7 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 | Field | Type | Description |
 | --- | --- | --- |
-| method <span class="label label-success">Required</span> | String | A valid name of one of the supported payment methods. You can see a list of supported payment methods in Dashboard > settings > payments. |
+| method  payments. |
 | order_id | Integer | The id of the order related to this payment. |
 |  | Mixed | Every payment method requires different additional parameters. Refer to the payment method documentation for more informations. |
 
@@ -52,4 +52,3 @@ marketcloud.payments.create(payment);
 
 ```
 
-</section>

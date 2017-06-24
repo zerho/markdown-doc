@@ -1,164 +1,4 @@
-
-
-<nav id="index">
-
-#### Getting Started
-
-*   [Introduction](#introduction)
-*   [Installation](#installation)
-*   [Authentication](#authentication)
-*   [Making requests](#making-requests)
-
-#### API REFERENCE
-
-*   [Addresses](#addresses)
-    *   [List all addresses](#addresses.list)
-    *   [Retrieve an address](#addresses.getById)
-*   [Brands](#brands)
-    *   [List all brands](#brands.list)
-    *   [Retrieve a brand](#brands.getById)
-*   [Carts](#carts)
-    *   [Create a cart](#carts.create)
-    *   [List all carts](#carts.list)
-    *   [Retrieve a cart](#carts.getById)
-    *   [Add items to cart](#carts.add)
-    *   [Update cart contents](#carts.update)
-    *   [Remove items from cart](#carts.remove)
-    *   [Delete a cart](#carts.delete)
-*   [Categories](#categories)
-    *   [List all categories](#categories.list)
-    *   [Retrieve a category](#categories.getById)
-*   [Collections](#collections)
-    *   [List all collections](#collections.list)
-    *   [Retrieve a collection](#collections.getById)
-*   [Coupons](#coupons)
-    *   [Retrieve a coupon](#coupons.getById)
-    *   [List all coupons](#coupons.list)
-*   [Orders](#orders)
-    *   [Create an order](#orders.create)
-    *   [Retrieve an order](#orders.getById)
-*   [Payment methods](#paymentMethods)
-    *   [Retrieve a payment method](#paymentMethods.getById)
-    *   [List all payment methods](#paymentMethods.list)
-*   [Payments](#payments)
-    *   [Create a payment](#payments.create)
-*   [Products](#products)
-    *   [List all products](#products.list)
-    *   [Retrieve a product](#products.getById)
-*   [Promotions](#promotions)
-    *   [Retrieve a promotion](#promotions.getById)
-    *   [List all promotions](#promotions.list)
-    *   [Get promotions by cart id](#promotions.getByCart)
-*   [Shippings](#shippings)
-    *   [List all shippings](#shippings.list)
-    *   [Retrieve a shipping](#shippings.getById)
-*   [Users](#users)
-    *   [Create a user](#users.create)
-    *   [List all users](#users.list)
-    *   [Retrieve a user](#users.getById)
-    *   [Update a user](#users.update)
-    *   [Delete a user](#users.delete)
-*   [Variables](#variables)
-    *   [Retrieve a variable](#variables.getById)
-    *   [List all variables](#variables.list)
-
-</nav>
-
-<nav id="mobile-index">
-
-
-
-#### Getting Started
-
-*   [Introduction](#introduction)
-*   [Installation](#installation)
-*   [Authentication](#authentication)
-*   [Making requests](#making-requests)
-
-#### API REFERENCE
-
-*   [Addresses](#addresses)
-    *   [Create an address](#addresses.create)
-    *   [List all addresses](#addresses.list)
-    *   [Retrieve an address](#addresses.getById)
-    *   [Update an address](#addresses.update)
-    *   [Delete an address](#addresses.delete)
-*   [Brands](#brands)
-    *   [Create a brand](#brands.create)
-    *   [List all brands](#brands.list)
-    *   [Retrieve a brand](#brands.getById)
-    *   [Update a brand](#brands.update)
-    *   [Delete a brand](#brands.delete)
-*   [Carts](#carts)
-    *   [Create a cart](#carts.create)
-    *   [List all carts](#carts.list)
-    *   [Retrieve a cart](#carts.getById)
-    *   [Add items to cart](#carts.add)
-    *   [Update cart contents](#carts.update)
-    *   [Remove items from cart](#carts.remove)
-*   [Categories](#categories)
-    *   [Create a category](#categories.create)
-    *   [List all categories](#categories.list)
-    *   [Retrieve a category](#categories.getById)
-    *   [Update a category](#categories.update)
-    *   [Delete a category](#categories.delete)
-*   [Collections](#collections)
-    *   [Create a collection](#collections.create)
-    *   [List all collections](#collections.list)
-    *   [Retrieve a collection](#collections.getById)
-    *   [Update a collection](#collections.update)
-    *   [Delete a collection](#collections.delete)
-*   [Coupons](#coupons)
-    *   [Retrieve a coupon](#coupons.getById)
-    *   [List all coupons](#coupons.list)
-    *   [Create a new coupon](#coupons.create)
-    *   [Updates a coupon](#coupons.update)
-    *   [Delete a coupon](#coupons.delete)
-*   [Orders](#orders)
-    *   [Create an order](#orders.create)
-    *   [List all orders](#orders.list)
-    *   [Retrieve an order](#orders.getById)
-*   [Payment methods](#paymentMethods)
-    *   [Retrieve a payment method](#paymentMethods.getById)
-    *   [List all payment methods](#paymentMethods.list)
-    *   [Create a new payment method](#paymentMethods.create)
-    *   [Updates a payment method](#paymentMethods.update)
-    *   [Delete a payment method](#paymentMethods.delete)
-*   [Payments](#payments)
-    *   [Create a payment](#payments.create)
-*   [Products](#products)
-    *   [Create a product](#products.create)
-    *   [List all products](#products.list)
-    *   [Retrieve a product](#products.getById)
-    *   [Update a product](#products.update)
-    *   [Delete a product](#products.delete)
-*   [Promotions](#promotions)
-    *   [Retrieve a promotion](#promotions.getById)
-    *   [List all promotions](#promotions.list)
-    *   [Create a new promotion](#promotions.create)
-    *   [Updates a promotion](#promotions.update)
-    *   [Delete a promotion](#promotions.delete)
-    *   [Get promotions by cart id](#promotions.getByCart)
-*   [Shippings](#shippings)
-    *   [List all shippings](#shippings.list)
-    *   [Create a new shipping](#shippings.create)
-    *   [Retrieve a shipping](#shippings.getById)
-    *   [Delete a shipping](#shippings.delete)
-*   [Users](#users)
-    *   [Create a user](#users.create)
-    *   [List all users](#users.list)
-    *   [Update a user](#users.update)
-    *   [Delete a user](#users.delete)
-*   [Variables](#variables)
-    *   [Retrieve a variable](#variables.getById)
-    *   [List all variables](#variables.list)
-    *   [Create a new variable](#variables.create)
-    *   [Updates a variable](#variables.update)
-    *   [Delete a variable](#variables.delete)
-
-</nav>
-
-</aside>
+# Marketcloud Javascript SDK
 
 This is the documentation for the official Marketcloud Javascript SDK. It is a wrapper for our REST api and it makes it easier to use. This document provides an API reference for versions 2.0.0 and above of the SDK, we highly recommend to use the latest version of the SDK and before upgrading, please read the [changelog](https://github.com/Marketcloud/marketcloud-js/wiki/Note-for-Version-2.0.0).
 
@@ -167,6 +7,8 @@ This is the documentation for the official Marketcloud Javascript SDK. It is a w
 If you haven't set up an application yet, please refer to the [Getting Started](/documentation/rest-api/gettingstarted) section. You can also check out our API Reference for more detailed information about our SDK.
 
 In Marketcloud, you create an App for each of your web/mobile applications. Each App has its own public key that you insert into your web app. Your account on Marketcloud can handle multiple Apps.
+
+
 
 ## Installation
 
@@ -188,6 +30,8 @@ At this point you can include the minified javascript file in your application
 <script type="text/javascript" src="dist/marketcloud.min.js"></script>
 ```
 
+
+
 ## Authentication and security
 
 Every application identifies itself to Marketcloud using a unique public key. Since you must ship the public key with your client application code, this key is **public**. The application security is guaranteed by the secret key, which you should never share with anyone. The only place where it should be safe to store and use the secret key is (in case you need it) your server side code.
@@ -203,9 +47,11 @@ Every application identifies itself to Marketcloud using a unique public key. Si
 > **Note**
 > By default, the SDK will have very limited write and read access. Most write operations will require user authentication. If the default user authorizations are not enough for your application (for example if you are building a Marketplace) you can create new user roles. [Learn more](#)
 
-Some methods requires a user authorization token. This is because, for example, only logged users should be able to edit their profile informations, or review their orders and items in carts. Whenever a method requires authentication, you will see a <span class="text-muted">Authentication required</span> label.
+Some methods requires a user authorization token. This is because, for example, only logged users should be able to edit their profile informations, or review their orders and items in carts. Whenever a method requires authentication, you will see a  label.
 
 In order to authenticate a user, use the [users.authenticate()](#users) method.
+
+
 
 ## Promises
 
@@ -230,6 +76,8 @@ marketcloud.products.list({})
 
 For using promises, the SDK needs Bluebird as a dependency. If you are installing this SDK with NPM or Bower, they will handle dependencies for you.
 
+
+
 ## Sorting
 
 Whenever you are requesting a list of resources, using a `list(query,callback)` method, you can pass sorting parameters to the query object:
@@ -243,7 +91,9 @@ client.products.list({
 
 ```
 
-`sort_by` is the name of the attribute you want to use for sorting and `sort_order` can have two values, `ASC` or `DESC`.## Addresses
+`sort_by` is the name of the attribute you want to use for sorting and `sort_order` can have two values, `ASC` or `DESC`.
+
+## Addresses
 
 
 
@@ -255,14 +105,14 @@ client.products.list({
 
 | Field | Type | Description |
 | --- | --- | --- |
-| full_name <span class="label label-success">Required</span> | String | The full name of the resident |
-| email <span class="label label-success">Required</span> | String | A valid email address |
-| country <span class="label label-success">Required</span> | String | The country of the address |
+| full_name  | String | The full name of the resident |
+| email  | String | A valid email address |
+| country  | String | The country of the address |
 | state | String | The state of the address |
-| city <span class="label label-success">Required</span> | String | The city of the address |
-| address1 <span class="label label-success">Required</span> | String | The first address |
+| city  | String | The city of the address |
+| address1  | String | The first address |
 | address2 | String | Additional address space |
-| postal_code <span class="label label-success">Required</span> | String | The postal code of the address |
+| postal_code  | String | The postal code of the address |
 | phone_number | String | The phone number for the address |
 | alternate_phone_number | String | An alternate phone number for the address |
 
@@ -335,8 +185,8 @@ Updates a address by id.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| address_id <span class="label label-success">Required</span> | Number | The univocal address identifier |
-| update_data <span class="label label-success">Required</span> | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
+| address_id  | Number | The univocal address identifier |
+| update_data  | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
 
 
 
@@ -364,7 +214,9 @@ marketcloud.addresses.delete(address_id,function(err){
   // Your code here
 })
 
-```## Brands
+```
+
+## Brands
 
 
 
@@ -424,7 +276,9 @@ marketcloud.brands.list(query, function(err,response){
 //Retrieves a list of categories filtered and sorted by the query object
   marketcloud.categories.list(query, function(err,response){
 });
-```## Carts
+```
+
+## Carts
 
 
 
@@ -436,7 +290,7 @@ marketcloud.brands.list(query, function(err,response){
 
 | Field | Type | Description |
 | --- | --- | --- |
-| items <span class="label label-success">Required</span> | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
+| items  | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
 
 
 
@@ -446,9 +300,9 @@ A line item is an object with the following attributes
 
 | Field | Type | Description |
 | --- | --- | --- |
-| product_id <span class="label label-success">Required</span> | Number | The univocal product identifier |
+| product_id  | Number | The univocal product identifier |
 | variant_id | Number | The univocal number identifying a product's variant. |
-| quantity <span class="label label-success">Required</span> | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
+| quantity  | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
 
 
 
@@ -561,7 +415,9 @@ If your store works with **variants**, you need to explicitly indicate which var
 
   });
 
-```<section class="resource">
+```
+
+
 
 ## Collections
 
@@ -615,7 +471,9 @@ marketcloud.collections.list({})
 
 ```
 
-</section>## Contents
+
+
+## Contents
 
 
 
@@ -636,7 +494,9 @@ marketcloud.collections.list({})
 //Retrieves a paginated list of categories filtered and sorted by the query object
   marketcloud.contents.list(query, function(err,response){
 });
-```<section class="resource">
+```
+
+
 
 ## Coupons
 
@@ -665,7 +525,9 @@ marketcloud.coupons.list({active : true});
 
 ```
 
-</section>## Orders
+
+
+## Orders
 
 
 
@@ -706,13 +568,13 @@ marketcloud.orders.list(query,function(err,response){
 
 | Field | Type | Description |
 | --- | --- | --- |
-| items | Array | An array of line items.This is required if the <span class="code">cart_id</span> is missing. |
-| cart_id <span class="label label-success">Required</span> | Integer | The id of the cart that is going to be turned into an order. This is required if <span class="code">items</span> is missing |
+| items | Array | An array of line items.This is required if the  is missing. |
+| cart_id  is missing |
 | state | String | The state of the order. Defaults to _created_ |
-| shipping_address_id <span class="label label-success">Required</span> | Integer | The id of the shipping address |
-| shipping_address | Object | A shipping address object. See Address for more informations. This is required if the <span class="code">shipping_address_id</span> is missing. |
-| billing_address_id <span class="label label-success">Required</span> | Integer | The id of the billing address |
-| billing_address | Object | A sbilling address object. See Address for more informations. This is required if the <span class="code">billing_address_id</span> is missing. |
+| shipping_address_id  | Integer | The id of the shipping address |
+| shipping_address | Object | A shipping address object. See Address for more informations. This is required if the  is missing. |
+| billing_address_id  | Integer | The id of the billing address |
+| billing_address | Object | A sbilling address object. See Address for more informations. This is required if the  is missing. |
 | user_id | Integer | The id of the user making the order |
 | shipping_id | Integer | The id of the **shipping method** chosen for the order. Be careful, this is not the shipping address. |
 | store_id | Integer | The id of the store receiving in the order |
@@ -753,7 +615,9 @@ Alternatively, instead of passing a cart_id you can pass a 'items' array contain
   marketcloud.orders.create(the_order,function(err,response){
   });     
 
-```## Payment methods
+```
+
+## Payment methods
 
 Payment methods are a way to describe how customers will pay the goods they are buying. We have some default payment methods which are integrated into the system such as Braintree and Stripe, but your store might want some custom methods, such as cash on delivery.
 
@@ -780,7 +644,9 @@ In order to tell Marketcloud that an order is using a certain payment method, ju
 //Retrieves a list of payment methods filtered and sorted by the query object
   marketcloud.paymentMethods.list(query, function(err,response){
 });
-```<section class="resource">
+```
+
+
 
 ## Payments
 
@@ -801,7 +667,7 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 | Field | Type | Description |
 | --- | --- | --- |
-| method <span class="label label-success">Required</span> | String | A valid name of one of the supported payment methods. You can see a list of supported payment methods in Dashboard > settings > payments. |
+| method  payments. |
 | order_id | Integer | The id of the order related to this payment. |
 |  | Mixed | Every payment method requires different additional parameters. Refer to the payment method documentation for more informations. |
 
@@ -834,7 +700,9 @@ marketcloud.payments.create(payment);
 
 ```
 
-</section>## Products
+
+
+## Products
 
 
 
@@ -934,7 +802,9 @@ var query = {
 
 ```
 
-The previous example queries the api for products that belongs to the category with id equal to 5 and that cost less than 50## Promotions
+The previous example queries the api for products that belongs to the category with id equal to 5 and that cost less than 50
+
+## Promotions
 
 
 
@@ -965,7 +835,9 @@ The previous example queries the api for products that belongs to the category w
 //Retrieves a list of promotions eligible for a specific cart
   marketcloud.promotions.getByCart(cart_id, function(err,response){
 });
-```## Users
+```
+
+## Users
 
 ### Checking if a user is authenticated
 
@@ -1114,7 +986,9 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
   marketcloud.users.delete(function(err){
   })      
 
-```## Variables
+```
+
+## Variables
 
 
 
@@ -1136,3 +1010,4 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
   marketcloud.variables.list(query, function(err,response){
 });
 ```
+

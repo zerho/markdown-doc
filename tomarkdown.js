@@ -28,7 +28,9 @@ console.log(`Reading directory ${ baseInputDirectory }`);
 console.log(`Writing directory ${ baseOutputDirectory }`);
 
 
-var filesToConvert = getFiles(baseInputDirectory);
+var filesToConvert = getFiles(baseInputDirectory).filter((item) => {
+  return item !== 'index.partial.ejs';
+});
 
 filesToConvert.forEach( (filename) => {
 
@@ -52,6 +54,15 @@ filesToConvert.forEach( (filename) => {
   markdown = markdown.replace(/\<\/div\>/g,'');
   markdown = markdown.replace(/\<a.*\>/g,'');
   markdown = markdown.replace(/\<\/a\>/g,'');
+  markdown = markdown.replace(/\<section.*\>/g,'');
+  markdown = markdown.replace(/\<\/section\>/g,'');
+
+   markdown = markdown.replace(/\<span.*\>/g,'');
+  markdown = markdown.replace(/\<\/span\>/g,'');
+  
+  markdown = markdown.replace(/\<span class\=\"label label\-success\"\>Required\<\/span\>/g,' _required_ ');
+
+
 
   fs.writeFileSync( path.join(baseOutputDirectory,filename.replace('ejs','md')), markdown);
 
