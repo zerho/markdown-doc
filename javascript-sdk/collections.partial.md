@@ -1,4 +1,8 @@
-Collections
+<section class="resource">
+
+## Collections
+
+
 
 ### Retrieve a collection
 
@@ -47,3 +51,5 @@ marketcloud.collections.list({})
 })
 
 ```
+
+</section>

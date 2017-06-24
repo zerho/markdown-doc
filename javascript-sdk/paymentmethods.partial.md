@@ -1,4 +1,4 @@
-Payment methods
+## Payment methods
 
 Payment methods are a way to describe how customers will pay the goods they are buying. We have some default payment methods which are integrated into the system such as Braintree and Stripe, but your store might want some custom methods, such as cash on delivery.
 

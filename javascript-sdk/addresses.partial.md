@@ -1,4 +1,6 @@
-Addresses
+## Addresses
+
+
 
 ### Create an address
 
@@ -8,14 +10,14 @@ Addresses
 
 | Field | Type | Description |
 | --- | --- | --- |
-| full_name Required | String | The full name of the resident |
-| email Required | String | A valid email address |
-| country Required | String | The country of the address |
+| full_name <span class="label label-success">Required</span> | String | The full name of the resident |
+| email <span class="label label-success">Required</span> | String | A valid email address |
+| country <span class="label label-success">Required</span> | String | The country of the address |
 | state | String | The state of the address |
-| city Required | String | The city of the address |
-| address1 Required | String | The first address |
+| city <span class="label label-success">Required</span> | String | The city of the address |
+| address1 <span class="label label-success">Required</span> | String | The first address |
 | address2 | String | Additional address space |
-| postal_code Required | String | The postal code of the address |
+| postal_code <span class="label label-success">Required</span> | String | The postal code of the address |
 | phone_number | String | The phone number for the address |
 | alternate_phone_number | String | An alternate phone number for the address |
 
@@ -88,8 +90,8 @@ Updates a address by id.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| address_id Required | Number | The univocal address identifier |
-| update_data Required | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
+| address_id <span class="label label-success">Required</span> | Number | The univocal address identifier |
+| update_data <span class="label label-success">Required</span> | Object | An object containing the updates. See [addresses.create()](#addresses.create) for more informations. |
 
 
 

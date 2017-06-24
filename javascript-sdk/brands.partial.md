@@ -1,4 +1,6 @@
-Brands
+## Brands
+
+
 
 ### Retrieve a brand
 
@@ -35,7 +37,9 @@ marketcloud.brands.list(query, function(err,response){
 });
 ```
 
-Categories
+## Categories
+
+
 
 ### Retrieve a category
 

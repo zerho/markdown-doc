@@ -1,3 +1,7 @@
+
+
+<nav id="index">
+
 #### Getting Started
 
 *   [Introduction](#introduction)
@@ -57,6 +61,10 @@
 *   [Variables](#variables)
     *   [Retrieve a variable](#variables.getById)
     *   [List all variables](#variables.list)
+
+</nav>
+
+<nav id="mobile-index">
 
 
 
@@ -147,3 +155,7 @@
     *   [Create a new variable](#variables.create)
     *   [Updates a variable](#variables.update)
     *   [Delete a variable](#variables.delete)
+
+</nav>
+
+</aside>

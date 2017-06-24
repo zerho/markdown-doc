@@ -1,4 +1,4 @@
-Users
+## Users
 
 ### Checking if a user is authenticated
 
@@ -109,7 +109,7 @@ Use this method to register users to you eCommerce app.
 
 ### Retrieve the currently authenticated user
 
-Authentication required
+
 
 ```
 
@@ -124,7 +124,7 @@ marketcloud.users.getCurrent(function(err,response){
 
 ### Update a user
 
-Authentication required
+
 
 ```
 
@@ -139,7 +139,7 @@ marketcloud.users.update({email : 'newaddress@example.com'},function(err,respons
 
 ### Delete a user
 
-Authentication required
+
 
 ```
 

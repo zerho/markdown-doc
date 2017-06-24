@@ -1,4 +1,6 @@
-Products
+## Products
+
+
 
 ### Retrieve a product
 
@@ -71,7 +73,7 @@ Retrieves a list of products filtered and sorted by the query object.
 | price_gt | Number | Display only products that cost more than the specified value. |
 | price_lt | Number | Display only products that cost less than the specified value. |
 | category | String | Display only products that belongs to the specified category path or to a sub category. For example, `?category=/shoes` matches all producs in categories /shoes, /shoes/running /shoes/classic and other subcategories of "shoes" |
-| `<attribute_name>` | Mixed | Filter products by any custom field. |
+| `` | Mixed | Filter products by any custom field. |
 | fields | String | Comma separated list of attribute names to retrieve. Use it to retrieve only the fields you need. |
 | per_page | Number | The number of products to retrieve per page |
 | page | Number | The page number of products to display |

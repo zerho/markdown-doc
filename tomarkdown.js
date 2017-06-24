@@ -32,6 +32,7 @@ var filesToConvert = getFiles(baseInputDirectory);
 
 filesToConvert.forEach( (filename) => {
 
+
   console.log("Leggo questo file "+path.join(baseInputDirectory, filename))
   var html = fs.readFileSync( path.join(baseInputDirectory, filename), 'utf-8');
 
@@ -40,13 +41,16 @@ filesToConvert.forEach( (filename) => {
   process.exit(1)
   }
 
-  html = sanitizeHtml(html);
 
+  //console.log(html);
+  //process.exit(1)
+
+  //html = sanitizeHtml(html);
   var markdown = toMarkdown(html, { gfm: true });
 
-  markdown = markdown.replace(/\<div\>/g,'');
+  markdown = markdown.replace(/\<div.*\>/g,'');
   markdown = markdown.replace(/\<\/div\>/g,'');
-  markdown = markdown.replace(/\<a\>/g,'');
+  markdown = markdown.replace(/\<a.*\>/g,'');
   markdown = markdown.replace(/\<\/a\>/g,'');
 
   fs.writeFileSync( path.join(baseOutputDirectory,filename.replace('ejs','md')), markdown);

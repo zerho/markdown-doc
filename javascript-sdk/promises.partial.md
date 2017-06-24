@@ -1,4 +1,6 @@
-Promises
+
+
+## Promises
 
 Even if the examples in this reference use callbacks, starting with version 2.0.0 of the SDK, each endpoint method also returns a promise.
 

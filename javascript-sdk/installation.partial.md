@@ -1,4 +1,6 @@
-Installation
+
+
+## Installation
 
 You can get the javascript SDK from [Github](https://github.com/Marketcloud/marketcloud-js):
 

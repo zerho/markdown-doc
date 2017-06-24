@@ -1,4 +1,6 @@
-Carts
+## Carts
+
+
 
 ### Create a cart
 
@@ -8,7 +10,7 @@ Carts
 
 | Field | Type | Description |
 | --- | --- | --- |
-| items Required | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
+| items <span class="label label-success">Required</span> | Array of Objects | The list of items, in the form `{product_id:1,quantity:10, [variant_id:1]}`, added on the cart |
 
 
 
@@ -18,9 +20,9 @@ A line item is an object with the following attributes
 
 | Field | Type | Description |
 | --- | --- | --- |
-| product_id Required | Number | The univocal product identifier |
+| product_id <span class="label label-success">Required</span> | Number | The univocal product identifier |
 | variant_id | Number | The univocal number identifying a product's variant. |
-| quantity Required | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
+| quantity <span class="label label-success">Required</span> | Number | A _positive_ number that indicates how many units of the chosen product must be added to cart. |
 
 
 

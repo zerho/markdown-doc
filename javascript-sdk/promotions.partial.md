@@ -1,4 +1,6 @@
-Promotions
+## Promotions
+
+
 
 ### Retrieve a promotion
 

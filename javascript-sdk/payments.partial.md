@@ -1,4 +1,6 @@
-Payments
+<section class="resource">
+
+## Payments
 
 Marketcloud supports a certain number of payment methods. Most of them requires client side and server side configuration, we try to abstract the server side part, so you just have to configure client side scripts.
 
@@ -17,9 +19,9 @@ You can find the list of payment methods supported by Marketcloud in your applic
 
 | Field | Type | Description |
 | --- | --- | --- |
-| method Required | String | A valid name of one of the supported payment methods. You can see a list of supported payment methods in Dashboard > settings > payments. |
+| method <span class="label label-success">Required</span> | String | A valid name of one of the supported payment methods. You can see a list of supported payment methods in Dashboard > settings > payments. |
 | order_id | Integer | The id of the order related to this payment. |
-| <attribute> | Mixed | Every payment method requires different additional parameters. Refer to the payment method documentation for more informations. |
+|  | Mixed | Every payment method requires different additional parameters. Refer to the payment method documentation for more informations. |
 
 
 
@@ -49,3 +51,5 @@ marketcloud.payments.create(payment);
 // and Stripe servers using their client side SDKs
 
 ```
+
+</section>

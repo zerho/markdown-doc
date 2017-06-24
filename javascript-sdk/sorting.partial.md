@@ -1,4 +1,6 @@
-Sorting
+
+
+## Sorting
 
 Whenever you are requesting a list of resources, using a `list(query,callback)` method, you can pass sorting parameters to the query object:
 

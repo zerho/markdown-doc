@@ -1,4 +1,8 @@
-Coupons
+<section class="resource">
+
+## Coupons
+
+
 
 ### Retrieve a coupon
 
@@ -22,3 +26,5 @@ marketcloud.coupons.getById(123);
 marketcloud.coupons.list({active : true});
 
 ```
+
+</section>
